@@ -1,6 +1,5 @@
 import os 
-
-class Teacher:
+class Teacher_test:
     def __init__(self,course_name,name,code,day,time):
         self.name = name
         self.course_name = course_name
@@ -13,5 +12,5 @@ class Teacher:
 
 
 if __name__ == "__main__":
-    teacher = Teacher('A','B','C','D','E')
+    teacher = Teacher_test('A','B','C','D','E')
     teacher.get()
