@@ -1,13 +1,27 @@
-teacher_name_list = ['王老師', '朱老師', '陳老師']
+from student import Student
 
-for i in range(len(teacher_name_list)):
-    teacher = Teacher(teacher_name_list[i])
-    teacher_list.append(teacher)
-print(teacher_list)
+class Teacher:
+    def __init__(self, name):
+        self.name = name
 
-print("--------------------------------")
-for i in range(len(teacher_name_list)):
-    print(str(i), ':', teacher_name_list[i])
-print("--------------------------------")
+    def getclass(self):
+        teacher_name_list = ['王老師', '朱老師', '陳老師']
+        teacher_list = []  # Define the teacher_list here
+        for i in range(len(teacher_name_list)):
+            teacher = Student(teacher_name_list[i])
+            teacher_list.append(teacher)
+        print(teacher_list)
 
-print('[Message] End')
+        print("--------------------------------")
+        for i in range(len(teacher_name_list)):
+            print(str(i), ':', teacher_name_list[i])
+        print("--------------------------------")
+        print("輸入:")
+        a = input()
+        return a
+
+
+if __name__ == "__main__":
+    # Provide a name when creating the Teacher instance
+    teacher = Teacher("John Doe")
+    teacher.getclass()  # Correct method name (was `get()`, now `getclass()`)
