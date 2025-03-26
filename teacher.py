@@ -20,7 +20,6 @@ class Teacher:
         a = input()
         return a
 
-
 if __name__ == "__main__":
     # Provide a name when creating the Teacher instance
     teacher = Teacher("John Doe")
