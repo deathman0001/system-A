@@ -1,7 +1,8 @@
 from student import Student
 
 class Teacher:
-    def __init__(self):
+    def __init__(self, name):
+        self.name = name
 
     def getclass(self):
         teacher_name_list = ['王老師', '朱老師', '陳老師']
@@ -21,5 +22,5 @@ class Teacher:
 
 if __name__ == "__main__":
     # Provide a name when creating the Teacher instance
-    teacher = Teacher()
+    teacher = Teacher("John Doe")
     teacher.getclass()  # Correct method name (was `get()`, now `getclass()`)
