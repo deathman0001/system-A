@@ -16,7 +16,7 @@ class Teacher:
         for i in range(len(teacher_name_list)):
             print(str(i), ':', teacher_name_list[i])
         print("--------------------------------")
-        print("輸入:")
+        print("輸入:",end="")
         a = input()
         return a
 
