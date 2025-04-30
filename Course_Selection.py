@@ -14,10 +14,11 @@ class Teacher:
 
         print("--------------------------------")
         for i in range(len(teacher_name_list)):
-            print(str(i), ':', teacher_name_list[i])
+            print(str(i + 1), ':', teacher_name_list[i])
         print("--------------------------------")
         print("輸入:",end="")
-        a = input()
+        a = eval(input())
+        a -= 1
         return a
 
 if __name__ == "__main__":
